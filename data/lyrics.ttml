@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling">
+
+<!-- Tools used: LyricSyncOnline, Website: www.lyricsynconline.com -->
+
+<ttm:metadata>
+    <ttm:tool>LyricSyncOnline</ttm:tool>
+    <ttm:website>www.lyricsynconline.com</ttm:website>
+</ttm:metadata>
+
+<body>
+    <div>
+        <p xmlns:tts="http://www.w3.org/ns/ttml#styling" begin="0:00:00.000" end="00:02:19.232" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Servint Figa Catalana</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:05.000" end="00:00:09.000" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>A les vuit del matí, a casa l’Alba,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:09.000" end="00:00:12.000" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>la núvia ens espera, amb cara de sorpresa.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:12.000" end="00:00:16.942" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Amb un esmorzar, riem i brindem,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:16.942" end="00:00:19.954" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>un dia especial, que no oblidarem</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:19.954" end="00:00:23.882" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Servint figa catalana, és el nostre lema,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:23.882" end="00:00:27.275" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>catalanitzant l’Alba, amb amor i amb ganes.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:27.275" end="00:00:30.747" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Ratafia a la mà, ja hem començat,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:30.747" end="00:00:39.462" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>celebrant la seva vida, amb cada amistat.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:39.462" end="00:00:46.036" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Activitats de ninja, força i agilitat,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:46.036" end="00:00:52.761" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>ens convertim en guerreres, amb gran intensitat.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:52.761" end="00:00:56.540" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Botifarra i all i oli, dinar de lleure,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:00:56.540" end="00:01:01.967" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>xupitos de ratafia, un sabor de locura</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:01.967" end="00:01:05.534" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Servint figa catalana, és el nostre lema,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:05.534" end="00:01:08.944" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>catalanitzant l’Alba, amb amor i amb ganes.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:08.944" end="00:01:12.115" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Ratafia a la mà, ja hem començat,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:12.115" end="00:01:20.524" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>celebrant la seva vida, amb cada amistat.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:20.524" end="00:01:27.943" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Ballant "La Marina està morena", ens preparem,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:27.943" end="00:01:34.368" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>el casament a Eslovènia, un somni que farem.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:34.368" end="00:01:37.959" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Jocs pel poble, consells per a l’amor,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:37.959" end="00:01:42.273" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>netejant cotxes, riem amb gran fervo</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:42.273" end="00:01:47.266" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Servint figa catalana, és el nostre lema,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:47.266" end="00:01:50.667" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>catalanitzant l’Alba, amb amor i amb ganes.</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:50.667" end="00:01:53.719" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>Ratafia a la mà, ja hem començat,</span>
+        </p>
+    </div>
+    <div>
+        <p begin="00:01:53.719" end="00:02:02.343" tts:origin="10% 50%" tts:extent="80% 80%" tts:textAlign="center">
+            <span>celebrant la seva vida, amb cada amist</span>
+        </p>
+    </div>
+</body>
+</tt>
