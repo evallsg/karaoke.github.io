@@ -16,6 +16,53 @@ class App {
 
         this.mixer = null;
         this.playing = false;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const photoBoard = document.getElementById('photoBoard');
+        
+            // Example images and captions for the polaroids
+            const photos = [
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 1'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 2'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 3'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 4'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 5'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 6'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 7'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 8'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 9'},
+                {src: 'https://via.placeholder.com/150', caption: 'Photo 10'},
+            ];
+        
+            // Create polaroid elements
+            photos.forEach((photo, index) => {
+                const polaroid = document.createElement('div');
+                polaroid.classList.add('polaroid');
+                polaroid.style.setProperty('--rotation', Math.random());
+                polaroid.style.setProperty('--translateX',  (photoBoard.clientWidth*Math.random()).toString() + "px");
+                polaroid.style.setProperty('--translateY',  (photoBoard.clientHeight*Math.random()).toString() + "px");
+                polaroid.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.caption}">
+                    <div class="caption">${photo.caption}</div>
+                `;
+        
+                // Add the polaroid to the photo board
+                photoBoard.appendChild(polaroid);
+                polaroid.classList.add('visible')
+                // Animate the polaroid in and out
+                setTimeout(() => polaroid.classList.add('visible'), index * 300);
+                setTimeout(() => polaroid.classList.remove('visible'), 2000 + index * 300);
+            });
+        
+            // Re-trigger the animation
+            setInterval(() => {
+                const polaroids = document.querySelectorAll('.polaroid');
+                polaroids.forEach((polaroid, index) => {
+                    setTimeout(() => polaroid.classList.add('visible'), index * 300);
+                    setTimeout(() => polaroid.classList.remove('visible'), 2000 + index * 300);
+                });
+            }, 6000);
+        });
     }
 
     init() {        
@@ -81,15 +128,17 @@ class App {
         this.renderer.render( this.scene,this.camera );    
         
         this.charactersToLoad = [
-            {name: 'Alba', filepath: 'https://models.readyplayer.me/66f14263d1fc3e398257745c.glb'},
-            {name: 'Eva', filepath: 'https://webglstudio.org/3Dcharacters/ReadyEva/ReadyEva.glb', position: new THREE.Vector3(1,0,-1)},
-            {name: 'Victor', filepath: 'https://webglstudio.org/3Dcharacters/ReadyVictor/ReadyVictor.glb', position: new THREE.Vector3(-1,0,-1)}
+            {name: 'Alba', filepath: 'https://models.readyplayer.me/66f14263d1fc3e398257745c.glb', position: new THREE.Vector3(-0.5,0,0)},
+            {name: 'Matej', filepath: 'https://models.readyplayer.me/66f6cc0711bf6ced95138eb0.glb', position: new THREE.Vector3(0.5,-0.1,0)},
+            {name: 'Eva', filepath: 'https://webglstudio.org/3Dcharacters/ReadyEva/ReadyEva.glb', position: new THREE.Vector3(1.5,0,-1)},
+            {name: 'Victor', filepath: 'https://webglstudio.org/3Dcharacters/ReadyVictor/ReadyVictor.glb', position: new THREE.Vector3(-1.5,0,-1)}
         ];
-        
+ 
         this.loadedCharacters = {};
         this.loadAvatars().then(() => {
-            this.loadAnimation('data/Macarena Dance.fbx');
-            document.getElementById("loading").classList.add('hidden');
+            this.loadAnimation('data/Macarena Dance.fbx', null, ()=> {
+                 document.getElementById("loading").classList.add('hidden');
+            });           
         })
         window.addEventListener( 'resize', this.onWindowResize.bind(this) );
         
@@ -250,13 +299,12 @@ class App {
                 for(let character in this.loadedCharacters) {
                     this.loadedCharacters[character].setAnimation((model).animations[0], skeleton);
                 }            
+                if(callback) {
+                    callback();
+                }
             });
         }
     } 
-
-    onLoadAvatar(model, name) {
-
-    }
 
     changePlayState(state = !this.playing) {
         this.playing = state;
